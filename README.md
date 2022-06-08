@@ -4,7 +4,7 @@
 
 ## Build
 ```shell
-xk6 build v0.36.0 --with github.com/gpiechnik2/xk6-proxy@latest
+xk6 build v0.38.3 --with github.com/gpiechnik2/xk6-proxy@latest
 ```
 
 ## Example
