@@ -30,7 +30,7 @@ export default function () {
 }
 ```
 
-[WARNING] Remember that using global variables affects ALL runs. The example at the bottom should not be used in performing actual tests. Use only for debugging or on a single thread.
+**[WARNING]** Remember that using global variables affects ALL runs. The example at the bottom should not be used in performing actual tests. Use only for debugging or on a single thread.
 
 ```javascript
 import proxy from 'k6/x/proxy';
