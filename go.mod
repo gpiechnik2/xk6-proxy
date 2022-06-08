@@ -1,4 +1,4 @@
-module xk6-proxy
+module github.com/gpiechnik2/xk6-proxy
 
 go 1.18
 
