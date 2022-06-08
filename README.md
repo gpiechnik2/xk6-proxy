@@ -9,6 +9,7 @@ xk6 build v0.36.0 --with github.com/gpiechnik2/xk6-proxy@latest
 
 ## Example
 
+### On a single request
 To use the proxy on http.Request objects from the k6 repository you would have to rebuild the entire class. Since this would take too much time, we use requests from the library, which under the k6 implementation is also used. We do not return the same Response object, but instead a string with the typical response for the http format.
 
 ```javascript
@@ -30,6 +31,7 @@ export default function () {
 }
 ```
 
+### On global variables
 **[WARNING]** Remember that using global variables affects ALL runs. The example at the bottom should not be used in performing actual tests. Use only for debugging or on a single thread.
 
 ```javascript
