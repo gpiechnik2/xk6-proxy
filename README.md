@@ -4,7 +4,7 @@
 
 ## Build
 ```shell
-xk6 build v0.36.0 --with github.com/gpiechnik2/xk6-proxy@latest
+xk6 build v0.38.3 --with github.com/gpiechnik2/xk6-proxy@latest
 ```
 
 ## Example
@@ -14,6 +14,7 @@ To use the proxy on http.Request objects from the k6 repository you would have t
 
 ```javascript
 import proxy from 'k6/x/proxy';
+
 
 export default function () {
     const proxyRes = proxy.request('GET', 'https://k6.io', "http://0.0.0.0:8080", {
@@ -36,6 +37,7 @@ export default function () {
 
 ```javascript
 import proxy from 'k6/x/proxy';
+
 
 export default function () {
     let currentEnvHTTP = proxy.getCurrentEnvHTTP() // 0.0.0.0:9000
