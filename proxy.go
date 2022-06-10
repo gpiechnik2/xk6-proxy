@@ -46,8 +46,8 @@ func check(e error) {
 }
 
 type options struct {
-	Headers []map[string]string `json:"headers"`
-	Body    string              `json:"body"`
+	Headers []map[string]string `js:"headers"`
+	Body    string              `js:"body"`
 }
 
 func getProxyUrl(proxyUrl string) *url.URL {
